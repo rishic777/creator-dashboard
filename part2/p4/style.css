@@ -1,0 +1,86 @@
+body{
+margin:0;
+font-family:Arial;
+background: linear-gradient(135deg,#0f172a,#1e1b4b,#0b1220);
+color:white;
+}
+
+/* TOPBAR */
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.topbar input{
+width:40%;
+padding:10px;
+border-radius:10px;
+border:none;
+outline:none;
+}
+
+/* BUTTONS */
+.actions button{
+padding:8px 12px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-left:8px;
+}
+
+/* TABLE */
+.table-container{
+padding:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border-radius:12px;
+overflow:hidden;
+}
+
+th,td{
+padding:12px;
+border-bottom:1px solid rgba(255,255,255,0.1);
+text-align:left;
+}
+
+/* NAME STYLE (ONLY HOVER HERE) */
+.creator-name{
+color:#60a5fa;
+cursor:pointer;
+font-weight:bold;
+}
+
+.creator-name:hover{
+text-decoration:underline;
+}
+
+/* STATUS */
+.status{
+padding:5px 10px;
+border-radius:8px;
+font-size:12px;
+}
+
+/* PROFILE CARD */
+.profile-card{
+position:absolute;
+width:260px;
+background:white;
+color:black;
+border-radius:12px;
+padding:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+.hidden{display:none;}

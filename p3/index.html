@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Creator Review Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <h2>👥 Creator Review Dashboard</h2>
+
+    <input type="text" id="search" placeholder="Search creators, brands, campaigns...">
+
+    <div class="actions">
+        <button>Filters</button>
+        <button>Export</button>
+        <div class="bell">🔔</div>
+    </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+
+    <div class="card blue">
+        <h3>30</h3>
+        <p>Total Creators</p>
+    </div>
+
+    <div class="card orange">
+        <h3>12</h3>
+        <p>Warning</p>
+    </div>
+
+    <div class="card green">
+        <h3>10</h3>
+        <p>Approved</p>
+    </div>
+
+    <div class="card red">
+        <h3>6</h3>
+        <p>Rejected</p>
+    </div>
+
+    <div class="card purple">
+        <h3>2</h3>
+        <p>On Hold</p>
+    </div>
+
+</div>
+
+<!-- TABLE -->
+<div class="table-container">
+
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Creator</th>
+<th>Brand</th>
+<th>Campaign</th>
+<th>Status</th>
+<th>Reason</th>
+<th>AI Summary</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+</div>
+
+<!-- HOVER PROFILE -->
+<div id="profileCard" class="profile-card hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

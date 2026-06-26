@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Creator Dashboard Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <h2>🎬 Creator Dashboard</h2>
+
+    <input type="text" id="search" placeholder="Search creators...">
+
+    <div class="actions">
+        <button>Filters</button>
+        <button>Export</button>
+    </div>
+</div>
+
+<!-- TABLE -->
+<div class="table-container">
+
+<table>
+<thead>
+<tr>
+<th>Creator</th>
+<th>Brand</th>
+<th>Campaign</th>
+<th>Status</th>
+<th>Summary</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+</div>
+
+<!-- HOVER CARD -->
+<div id="profileCard" class="profile-card hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

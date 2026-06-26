@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Popover</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h2>Creator Dashboard</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Creator Name</th>
+                <th>Brand</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td class="creator-cell">
+
+                    <span class="creator-name" onclick="toggleCard()">
+                        {{ creator.name }}
+                    </span>
+
+                    <div id="profileCard" class="profile-card">
+
+                        <h3>Creator Profile</h3>
+
+                        <hr>
+
+                        <p><strong>👤 Name:</strong> {{ creator.name }}</p>
+
+                        <p><strong>🌍 Country:</strong> {{ creator.country }}</p>
+
+                        <p><strong>✔ Verification:</strong> {{ creator.verification }}</p>
+
+                        <p><strong>🎥 Creator Type:</strong> {{ creator.creator_type }}</p>
+
+                    </div>
+
+                </td>
+
+                <td>Luma</td>
+
+                <td>Warning Up</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

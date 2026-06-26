@@ -1,0 +1,96 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f5f5f5;
+
+    padding: 40px;
+}
+
+h2 {
+
+    margin-bottom: 20px;
+}
+
+table {
+
+    width: 700px;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+th {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 15px;
+}
+
+td {
+
+    padding: 15px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.creator-cell {
+
+    position: relative;
+}
+
+.creator-name {
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.creator-name:hover {
+
+    text-decoration: underline;
+}
+
+.profile-card {
+
+    display: none;
+
+    position: absolute;
+
+    top: 35px;
+
+    left: 0;
+
+    width: 280px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+    padding: 18px;
+
+    z-index: 100;
+}
+
+.profile-card h3 {
+
+    margin-top: 0;
+
+    text-align: center;
+}
+
+.profile-card p {
+
+    margin: 12px 0;
+}
